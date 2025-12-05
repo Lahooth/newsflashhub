@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Block unnecessary folders (you can uncomment if needed)
+# Disallow: /scripts/
+# Disallow: /temp/
+# Disallow: /private/
+
+# Allow Google News bot
+User-agent: Googlebot-News
+Allow: /
+
+# Allow Google Ads crawling
+User-agent: Mediapartners-Google
+Allow: /
+
+# Allow Google Image bot
+User-agent: Googlebot-Image
+Allow: /
+
+# Allow Google Mobile bot
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Sitemap location
+Sitemap: https://newsflashhub.netlify.app/sitemap.xml

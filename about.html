@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ======================= GOOGLE ADSENSE AUTO ADS ======================= -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2746039362013324"
+          crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ======================= SEO ======================= -->
+  <title>NewsFlash Hub – Breaking News, Trending Headlines Updated Every Minute</title>
+  <meta name="description" content="Stay informed with NewsFlash Hub — breaking news, trending headlines, sports, tech updates, and global stories refreshed every minute.">
+  <meta name="keywords" content="NewsFlash Hub, breaking news, latest news, trending headlines, India news, world news, tech news, sports news">
+
+  <link rel="canonical" href="https://newsflashhub.netlify.app/">
+
+  <!-- ======================= OPEN GRAPH ======================= -->
+  <meta property="og:title" content="NewsFlash Hub – Breaking News Updated Every Minute">
+  <meta property="og:description" content="Top stories auto-updated every minute — technology, sports, business, world news and more.">
+  <meta property="og:image" content="https://newsflashhub.netlify.app/og-image.png">
+  <meta property="og:url" content="https://newsflashhub.netlify.app/">
+  <meta property="og:type" content="website">
+
+  <!-- ======================= TWITTER CARD ======================= -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NewsFlash Hub – Latest Headlines Updated Every Minute">
+  <meta name="twitter:description" content="Live breaking news from trusted global sources, refreshed every minute.">
+  <meta name="twitter:image" content="https://newsflashhub.netlify.app/og-image.png">
+
+  <!-- ======================= SEARCH ENGINE INSTRUCTIONS ======================= -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- ======================= JSON-LD SCHEMA ======================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "NewsFlash Hub",
+    "url": "https://newsflashhub.netlify.app/",
+    "logo": "https://newsflashhub.netlify.app/og-image.png",
+    "description": "NewsFlash Hub provides breaking news, trending headlines, global stories, and real-time updates refreshed every minute.",
+    "founder": { "@type": "Person", "name": "Lahooth Imrahn" },
+    "foundingLocation": "India",
+    "inLanguage": "en",
+    "sameAs": [
+      "https://www.facebook.com/",
+      "https://www.instagram.com/",
+      "https://twitter.com/"
+    ]
+  }
+  </script>
+
+  <!-- ======================= GOOGLE ANALYTICS ======================= -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1QNWVGXE0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-1QNWVGXE0');
+  </script>
+
+  <!-- ======================= FAVICONS ======================= -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- ======================= MAIN CSS ======================= -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ======================= HEADER ======================= -->
+  <header class="top-bar">
+    <div class="logo-area">
+      <h1 class="site-title" data-i18n="site_title">NewsFlash Hub</h1>
+      <p class="tagline" data-i18n="tagline">Today’s top stories. Auto-updated.</p>
+    </div>
+    <div class="meta-area">
+      <div id="current-date">Today: --</div>
+      <div id="last-updated">Last updated: --</div>
+    </div>
+  </header>
+
+  <!-- ======================= NAVIGATION ======================= -->
+  <nav class="nav-bar">
+    <button class="nav-btn active" data-section="top-headlines" data-i18n="tab_top">Top Headlines</button>
+    <button class="nav-btn" data-section="technology" data-i18n="tab_tech">Technology</button>
+    <button class="nav-btn" data-section="sports" data-i18n="tab_sports">Sports</button>
+    <button class="nav-btn" data-section="business">Business</button>
+    <button class="nav-btn" data-section="world" data-i18n="tab_world">World</button>
+  </nav>
+
+  <!-- ======================= MAIN CONTENT ======================= -->
+  <main class="content-wrapper">
+    <div class="layout">
+
+      <!-- ========== MAIN COLUMN ========== -->
+      <section class="main-column">
+
+        <section class="widget editor-note">
+          <h2>Today at NewsFlash Hub</h2>
+          <p>NewsFlash Hub is your minimal, high-speed, auto-updated news dashboard...</p>
+        </section>
+
+        <section class="news-section editors-picks">
+          <h2>Editor’s Picks – Handpicked Stories</h2>
+          <div class="news-grid">
+            <!-- STATIC STORIES HERE -->
+          </div>
+        </section>
+
+        <section id="top-headlines" class="news-section active">
+          <h2 data-i18n="sec_top">Top Headlines</h2>
+          <div id="top-headlines-list" class="news-grid"></div>
+        </section>
+
+        <section id="technology" class="news-section">
+          <h2>Technology</h2>
+          <div id="tech-news-list" class="news-grid"></div>
+        </section>
+
+        <section id="sports" class="news-section">
+          <h2>Sports</h2>
+          <div id="sports-news-list" class="news-grid"></div>
+        </section>
+
+        <section id="business" class="news-section">
+          <h2>Business</h2>
+          <div id="business-news-list" class="news-grid"></div>
+        </section>
+
+        <section id="world" class="news-section">
+          <h2>World</h2>
+          <div id="world-news-list" class="news-grid"></div>
+        </section>
+      </section>
+
+      <!-- ========== SIDEBAR ========== -->
+      <aside class="sidebar">
+        <section class="widget">
+          <h3>Weather</h3>
+          <div id="weather-widget"></div>
+        </section>
+
+        <section class="widget">
+          <h3>Trending Searches</h3>
+          <ul id="trending-list" class="widget-list"></ul>
+        </section>
+
+        <section class="widget">
+          <h3>Cricket Updates</h3>
+          <ul id="cricket-list" class="widget-list"></ul>
+        </section>
+
+        <section class="widget">
+          <h3>Market Snapshot</h3>
+          <ul id="market-list" class="widget-list"></ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    © <span id="year-span"></span> NewsFlash Hub ·
+    <a href="about.html">About</a> ·
+    <a href="contact.html">Contact</a> ·
+    <a href="news.html">In-Depth Articles</a> ·
+    <a href="privacy.html">Privacy Policy</a> ·
+    <a href="terms.html">Terms</a> ·
+    <a href="disclaimer.html">Disclaimer</a>
+  </footer>
+
+  <!-- ======================= SCRIPTS ======================= -->
+  <script src="script.js" defer></script>
+
+  <script>
+    document.getElementById("year-span").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
