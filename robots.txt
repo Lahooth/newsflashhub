@@ -23,4 +23,5 @@ User-agent: Googlebot-Mobile
 Allow: /
 
 # Sitemap location
-Sitemap: https://newsflashhub.netlify.app/sitemap.xml
+Sitemap: https://newsflashhub.vercel.app/sitemap.xml
+
